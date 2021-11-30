@@ -50,12 +50,12 @@ const Layout = ({ children }) => {
           alt="Banner"
         />
       </header>
-      <ReadingProgress target={target} />
-      <Header enlaces={enlaces} />
 
+      <Header enlaces={enlaces} />
+      <ReadingProgress target={target} />
       <main
         lang="es"
-        className="container m-auto py-2 justify-content-between text-gray-800 bg-gray-200 dark:bg-gray-900 dark:text-gray-400 text-center"
+        className="container m-auto py-2 justify-content-between bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-800 dark:to-black text-gray-700 dark:bg-gray-900 dark:text-gray-400 text-center"
         ref={target}
       >
         {children}

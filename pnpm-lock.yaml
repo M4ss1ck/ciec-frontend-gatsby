@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.12.3
+  '@headlessui/react': ^1.4.2
   '@tailwindcss/typography': ^0.4.1
   autoprefixer: ^10.4.0
   gatsby: ^4.0.2
@@ -30,6 +31,7 @@ specifiers:
 
 dependencies:
   '@babel/core': 7.16.0
+  '@headlessui/react': 1.4.2_react-dom@17.0.2+react@17.0.2
   '@tailwindcss/typography': 0.4.1_tailwindcss@2.2.19
   autoprefixer: 10.4.0_postcss@8.4.4
   gatsby: 4.2.0_react-dom@17.0.2+react@17.0.2
@@ -1664,6 +1666,17 @@ packages:
     resolution: {integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg==}
     dependencies:
       '@hapi/hoek': 9.2.1
+    dev: false
+
+  /@headlessui/react/1.4.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-N8tv7kLhg9qGKBkVdtg572BvKvWhmiudmeEpOCyNwzOsZHCXBtl8AazGikIfUS+vBoub20Fse3BjawXDVPPdug==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: ^16 || ^17 || ^18
+      react-dom: ^16 || ^17 || ^18
+    dependencies:
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /@humanwhocodes/config-array/0.5.0:

@@ -12,6 +12,10 @@ h3 {
 a {
   @apply text-blue-600 no-underline;
 }
+body {
+  @apply bg-primario;
+}
+
 body.dark {
   @apply bg-black;
 }

@@ -6,6 +6,7 @@
   "author": "Kostas Vrouvas <hello@kosvrouvas.com>",
   "dependencies": {
     "@babel/core": "^7.12.3",
+    "@headlessui/react": "^1.4.2",
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.4.0",
     "gatsby": "^4.0.2",
