@@ -32,7 +32,7 @@ const Header = props => {
           </span>
         </Link>
         <button
-          className=" inline-flex p-3 hover:bg-azul-ciec rounded lg:hidden text-white ml-auto hover:text-black outline-none"
+          className=" inline-flex p-3 rounded lg:hidden text-white ml-auto outline-none"
           onClick={handleClick}
         >
           <svg
@@ -84,6 +84,7 @@ const Header = props => {
             })}
           </div>
         </div>
+
         <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <div className="dark-button mx-4">

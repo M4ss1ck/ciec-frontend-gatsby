@@ -14,6 +14,7 @@ module.exports = {
     extend: {
       display: ["responsive", "hover", "focus", "group-hover"],
       animation: ["hover"],
+      fontWeight: ["hover"],
     },
   },
   plugins: [],
