@@ -8,6 +8,7 @@ specifiers:
   gatsby-plugin-dark-mode: ^1.1.2
   gatsby-plugin-google-analytics: ^4.0.0
   gatsby-plugin-image: ^2.0.0
+  gatsby-plugin-layout: ^3.2.0
   gatsby-plugin-manifest: ^4.0.0
   gatsby-plugin-offline: ^5.0.0
   gatsby-plugin-pnpm: ^1.2.9
@@ -35,6 +36,7 @@ dependencies:
   gatsby-plugin-dark-mode: 1.1.2_react@17.0.2
   gatsby-plugin-google-analytics: 4.2.0_c765a534a9819edd276fc963d09a6af1
   gatsby-plugin-image: 2.2.0_044a76b5c5a6e32d359ae708e0c464f3
+  gatsby-plugin-layout: 3.2.0_gatsby@4.2.0
   gatsby-plugin-manifest: 4.2.0_gatsby@4.2.0
   gatsby-plugin-offline: 5.2.0_c765a534a9819edd276fc963d09a6af1
   gatsby-plugin-pnpm: 1.2.9_gatsby@4.2.0
@@ -5882,6 +5884,16 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /gatsby-plugin-layout/3.2.0_gatsby@4.2.0:
+    resolution: {integrity: sha512-CqcFs3ldu0Oa/LFENTegKxZLqE40csnHChTn2NnDLY9LkZW3U5bDyWNEGpgVhy54IJ9FufiNGN50/0snny494A==}
+    engines: {node: '>=14.15.0'}
+    peerDependencies:
+      gatsby: ^4.0.0-next
+    dependencies:
+      '@babel/runtime': 7.16.3
+      gatsby: 4.2.0_react-dom@17.0.2+react@17.0.2
     dev: false
 
   /gatsby-plugin-manifest/4.2.0_gatsby@4.2.0:
