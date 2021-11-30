@@ -1,6 +1,6 @@
 import React from "react"
-//import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import { Link, graphql } from "gatsby"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
 import SEO from "../components/seo"
 
@@ -45,22 +45,22 @@ const IndexPage = ({ data }) => (
     <article>
       <h2 className="h2">Noticias</h2>
       <ul>
-        {/* {data.allStrapiArticle.edges.map(document => (
-            <li key={document.node.id}>
-              <h2>
-                <a href={`/noticias/${document.node.slug}`}>
-                  {document.node.title}
-                </a>
-              </h2>
-              <GatsbyImage
-                image={
-                  document.node.image.localFile.childImageSharp.gatsbyImageData
-                }
-                alt={document.node.title}
-              />
-              <p>{document.node.description}</p>
-            </li>
-          ))} */}
+        {data.allStrapiArticle.edges.map(document => (
+          <li key={document.node.id}>
+            <h2>
+              <Link to={`/noticias/${document.node.slug}`}>
+                {document.node.title}
+              </Link>
+            </h2>
+            <GatsbyImage
+              image={
+                document.node.image.localFile.childImageSharp.gatsbyImageData
+              }
+              alt={document.node.title}
+            />
+            <p>{document.node.description}</p>
+          </li>
+        ))}
       </ul>
     </article>
   </>
@@ -68,24 +68,24 @@ const IndexPage = ({ data }) => (
 
 export default IndexPage
 
-// export const pageQuery = graphql`
-//   query IndexQuery {
-//     allStrapiArticle {
-//       edges {
-//         node {
-//           id
-//           title
-//           slug
-//           description
-//           image {
-//             localFile {
-//               childImageSharp {
-//                 gatsbyImageData(width: 200, height: 125, layout: FIXED)
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `
+export const pageQuery = graphql`
+  query IndexQuery {
+    allStrapiArticle {
+      edges {
+        node {
+          id
+          title
+          slug
+          description
+          image {
+            localFile {
+              childImageSharp {
+                gatsbyImageData(width: 200, height: 125, layout: FIXED)
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
