@@ -2,11 +2,11 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const IndexPage = ({ data }) => (
   <>
-    <SEO title="Página Principal" />
+    <Seo title="Página Principal" />
     <article className="container m-auto justify-content-between float">
       <h2 className="h2">
         Bienvenidos al Centro de Investigaciones de Ecosistemas Costeros
@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => (
       </p>
     </article>
     <article>
-      <h2 className="text-xl text-secundario font-bold mt-6">Noticias</h2>
+      <h2 className="text-xl dark:text-secundario font-bold mt-6">Noticias</h2>
       <ul className="flex flex-row flex-wrap items-center justify-evenly w-full">
         {data.allStrapiArticle.edges.map(document => (
           <Link

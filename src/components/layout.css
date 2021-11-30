@@ -25,6 +25,7 @@ body.dark {
 
 /* https://medium.com/swlh/explainlikeim5-1-dark-mode-on-css-react-and-gatsby-and-a-beautiful-toggle-40ccbcf01f8c */
 /* estilos de https://gist.github.com/xdebbie/ebd638fb277b33b7068fadc9218e25bc*/
+
 .dark-button {
   box-sizing: border-box;
   display: flex;

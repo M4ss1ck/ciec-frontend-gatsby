@@ -1,10 +1,10 @@
 import React from "react"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const ConsultoriaAmbiental = () => {
   return (
     <article>
-      <SEO title="Consultoría Ambiental" />
+      <Seo title="Consultoría Ambiental" />
       <hgroup>
         <h2 id="titulo">Consultoría Ambiental</h2>
         <h3>Servicios Científico-Técnicos</h3>

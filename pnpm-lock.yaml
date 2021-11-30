@@ -29,6 +29,7 @@ specifiers:
   react-helmet: ^6.1.0
   react-markdown: ^7.1.1
   react-social-icons: ^5.6.1
+  react-toggle: ^4.1.2
   rehype-raw: ^6.1.0
   tailwindcss: ^2.2.19
 
@@ -60,6 +61,7 @@ dependencies:
   react-helmet: 6.1.0_react@17.0.2
   react-markdown: 7.1.1_react@17.0.2
   react-social-icons: 5.6.1_react@17.0.2
+  react-toggle: 4.1.2_9bdd65c2b60ce8638444b80b396a481b
   rehype-raw: 6.1.0
 
 devDependencies:
@@ -10457,6 +10459,19 @@ packages:
     dependencies:
       prop-types: 15.7.2
       react: 17.0.2
+    dev: false
+
+  /react-toggle/4.1.2_9bdd65c2b60ce8638444b80b396a481b:
+    resolution: {integrity: sha512-4Ohw31TuYQdhWfA6qlKafeXx3IOH7t4ZHhmRdwsm1fQREwOBGxJT+I22sgHqR/w8JRdk+AeMCJXPImEFSrNXow==}
+    peerDependencies:
+      prop-types: '>= 15.3.0 < 18'
+      react: '>= 15.3.0 < 18'
+      react-dom: '>= 15.3.0 < 18'
+    dependencies:
+      classnames: 2.3.1
+      prop-types: 15.7.2
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
     dev: false
 
   /react-transition-group/4.4.2_react-dom@17.0.2+react@17.0.2:
