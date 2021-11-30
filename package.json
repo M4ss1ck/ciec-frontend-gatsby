@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "ciec-frontend-gatsby",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby and TailwindCSS",
-  "version": "0.3.0",
-  "author": "Kostas Vrouvas <hello@kosvrouvas.com>",
+  "description": "Página del Centro de Investigaciones de Ecosistemas Costeros",
+  "version": "0.5.0",
+  "author": "Andy <4ndyraul@gmail.com>",
   "dependencies": {
     "@babel/core": "^7.12.3",
     "@headlessui/react": "^1.4.2",
@@ -56,9 +56,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kosvrouvas/gatsby-tailwindcss-starter"
+    "url": "https://github.com/M4ss1ck/ciec-frontend-gatsby"
   },
   "bugs": {
-    "url": "https://github.com/kosvrouvas/gatsby-tailwindcss-starter/issues"
+    "url": "https://github.com/M4ss1ck/ciec-frontend-gatsby/issues"
   }
 }
