@@ -1,8 +1,8 @@
-import React from "react";
-import { Link, graphql } from "gatsby";
-import { getSrc } from "gatsby-plugin-image";
-import ReactMarkdown from "react-markdown";
-import rehypeRaw from "rehype-raw";
+import React from "react"
+import { Link, graphql } from "gatsby"
+import { GatsbyImage } from "gatsby-plugin-image"
+import ReactMarkdown from "react-markdown"
+import rehypeRaw from "rehype-raw"
 
 const ArticleTemplate = ({ data }) => (
   <>
@@ -13,10 +13,10 @@ const ArticleTemplate = ({ data }) => (
       </Link>
     </p>
 
-    <img
-      src={getSrc(data.strapiArticle.image.localFile)}
+    <GatsbyImage
+      image={data.strapiArticle.image.localFile.childImageSharp.gatsbyImageData}
       alt={data.strapiArticle.title}
-      style={{ width: "100%" }}
+      className="w-2/3 rounded-lg"
     />
 
     <div>
@@ -28,9 +28,9 @@ const ArticleTemplate = ({ data }) => (
       <hr />
     </div>
   </>
-);
+)
 
-export default ArticleTemplate;
+export default ArticleTemplate
 
 export const query = graphql`
   query ArticleTemplate($id: String!) {
@@ -40,7 +40,7 @@ export const query = graphql`
       image {
         localFile {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(layout: CONSTRAINED)
           }
         }
       }
@@ -50,4 +50,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
