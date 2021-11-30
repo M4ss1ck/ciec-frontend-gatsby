@@ -1,73 +1,105 @@
+import React from "react"
+import { useState } from "react"
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useState } from "react"
+//import { useStaticQuery, graphql, Link } from "gatsby";
+//import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import logo from "../images/logo.png"
 
-function Header({ siteTitle }) {
-  const [isExpanded, toggleExpansion] = useState(false)
+const Header = props => {
+  const [active, setActive] = useState(false)
+
+  const handleClick = () => {
+    setActive(!active)
+  }
 
   return (
-    <nav className="flex flex-wrap items-center justify-between p-6 mb-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
-      <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <span className="text-xl font-semibold tracking-tight">
-          {siteTitle}
-        </span>
-      </div>
-      <div className="block lg:hidden">
+    <>
+      <nav className="flex items-center flex-wrap bg-gradient-to-r from-primario via-terciario to-primario p-3 w-full sticky top-0 z-20 hover:z-50 dark:from-black dark:via-gray-900 dark:to-black">
+        <Link
+          to="/"
+          className="inline-flex items-center p-1 mr-4 rounded-full bg-white md:ml-8 lg:ml-16 dark:bg-black"
+        >
+          <img
+            src={logo}
+            className="object-fill"
+            height={36}
+            width={36}
+            alt="Logo"
+          />{" "}
+          <span className="text-lg text-primario font-bold uppercase tracking-wide dark:text-white">
+            &nbsp;Inicio
+          </span>
+        </Link>
         <button
-          onClick={() => toggleExpansion(!isExpanded)}
-          className="flex items-center px-3 py-2 text-white border border-white rounded hover:text-white hover:border-white"
+          className=" inline-flex p-3 hover:bg-azul-ciec rounded lg:hidden text-white ml-auto hover:text-black outline-none"
+          onClick={handleClick}
         >
           <svg
-            className="w-3 h-3 fill-current"
-            viewBox="0 0 20 20"
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
           </svg>
         </button>
-      </div>
-      <div
-        className={`${
-          isExpanded ? `block` : `hidden`
-        } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}
-      >
-        <div className="text-sm lg:flex-grow">
-          <Link
-            to={`/`}
-            href="#responsive-header"
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-          >
-            Home
-          </Link>
-          <Link
-            to={`/page-2`}
-            className="block mt-4 mr-4 text-white lg:inline-block lg:mt-0 hover:text-white"
-          >
-            page 2
-          </Link>
+        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
+        <div
+          className={`${
+            active ? "" : "hidden"
+          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+        >
+          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
+            {props.enlaces.map(enlace => {
+              return (
+                <div key={enlace.name} className="group hover:h-24 lg:px-6">
+                  <button className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold group-hover:hidden mr-auto text-left">
+                    <span className="text-sm font-bold uppercase tracking-wide">
+                      {enlace.name}
+                    </span>
+                  </button>
+                  <ul className="hidden group-hover:flex flex-col h-full group-hover:justify-center">
+                    {enlace.menu.map(item => {
+                      return (
+                        <li key={item.name} className="text-inherit">
+                          <Link
+                            to={item.link}
+                            className="text-sm rounded-md px-2 text-white uppercase tracking-wide hover:bg-secundario"
+                          >
+                            {item.name}
+                          </Link>
+                        </li>
+                      )
+                    })}
+                  </ul>
+                </div>
+              )
+            })}
+          </div>
         </div>
-        <div>
-          <a
-            href="https://github.com/kosvrouvas/gatsby-tailwindcss-starter"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-block px-4 py-2 mt-4 text-sm leading-none text-white border border-white rounded hover:border-transparent hover:text-black hover:bg-white lg:mt-0"
-          >
-            Download
-          </a>
-        </div>
-      </div>
-    </nav>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <div className="dark-button mx-4">
+              <input
+                type="checkbox"
+                id="toggle"
+                onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+                checked={theme === "dark"}
+              />
+              <label for="toggle" htmlFor="toggle"></label>
+            </div>
+          )}
+        </ThemeToggler>
+      </nav>
+    </>
   )
-}
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
 }
 
 export default Header

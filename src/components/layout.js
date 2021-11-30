@@ -1,51 +1,69 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+//import { useStaticQuery, graphql } from "gatsby"
+import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
+import banner from "../images/Banner.jpg"
+import ReadingProgress from "./readingProgress"
+import Subir from "./subir"
+
+const enlaces = [
+  {
+    name: "Institución",
+    menu: [
+      { link: "/mision-y-vision", name: "Misión y visión" },
+      { link: "/social", name: "Objeto Social" },
+      { link: "/historia", name: "Historia del CIEC" },
+      { link: "/estructura", name: "Estructura e Integrantes" },
+    ],
+  },
+  {
+    name: "Investigación",
+    menu: [
+      { link: "/grupos", name: "Grupos de Investigación" },
+      { link: "/consultoria-ambiental", name: "Consultoría Ambiental" },
+      { link: "/proyectos", name: "Proyectos" },
+    ],
+  },
+  {
+    name: "De Interés",
+    menu: [
+      { link: "/galeria", name: "Galería" },
+      { link: "/contacto", name: "Sobre Nosotros" },
+    ],
+  },
+]
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  const target = React.createRef()
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <header
+        id="header"
+        className="flex flex-col items-center w-full p-0 m-0 bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-900 dark:to-black"
       >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+        <img
+          src={banner}
+          className="object-fill"
+          height={203}
+          width={940}
+          alt="Banner"
+        />
+      </header>
+      <ReadingProgress target={target} />
+      <Header enlaces={enlaces} />
+
+      <main
+        lang="es"
+        className="container m-auto py-2 justify-content-between text-gray-800 bg-gray-200 dark:bg-gray-900 dark:text-gray-400 text-center"
+        ref={target}
+      >
+        {children}
+      </main>
+      <Subir />
+      <Footer />
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
