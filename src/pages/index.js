@@ -44,22 +44,25 @@ const IndexPage = ({ data }) => (
     </article>
     <article>
       <h2 className="h2">Noticias</h2>
-      <ul>
+      <ul className="flex flex-row flex-wrap items-center justify-evenly w-full">
         {data.allStrapiArticle.edges.map(document => (
-          <li key={document.node.id}>
-            <h2>
-              <Link to={`/noticias/${document.node.slug}`}>
-                {document.node.title}
-              </Link>
-            </h2>
-            <GatsbyImage
-              image={
-                document.node.image.localFile.childImageSharp.gatsbyImageData
-              }
-              alt={document.node.title}
-            />
-            <p>{document.node.description}</p>
-          </li>
+          <Link
+            key={document.node.id}
+            to={`/noticias/${document.node.slug}`}
+            className="text-gray-600 dark:text-gray-500 hover:text-gray-300 hover:bg-primario dark:hover:text-primario group w-full md:w-1/3 lg:w-1/4 p-2 m-1 border-4 border-white hover:border-primario rounded-lg flex flex-col justify-center items-center"
+          >
+            <li className="group-hover:border-primario rounded-lg flex flex-col justify-center items-center">
+              <h2>{document.node.title}</h2>
+              <GatsbyImage
+                image={
+                  document.node.image.localFile.childImageSharp.gatsbyImageData
+                }
+                className=""
+                alt={document.node.title}
+              />
+              <p>{document.node.description}</p>
+            </li>
+          </Link>
         ))}
       </ul>
     </article>

@@ -16,6 +16,7 @@ module.exports = {
       animation: ["hover"],
       fontWeight: ["hover"],
       zIndex: ["responsive", "hover", "group-hover"],
+      borderColor: ["responsive", "hover", "group-hover"],
     },
   },
   plugins: [],
