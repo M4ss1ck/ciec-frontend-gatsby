@@ -51,7 +51,7 @@
     "start": "npm run dev",
     "serve": "gatsby serve -o",
     "clean": "gatsby clean",
-    "show": "gatsby build && gatsby serve -o",
+    "show": "gatsby clean && gatsby build && gatsby serve -o",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
