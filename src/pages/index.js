@@ -66,25 +66,6 @@ const IndexPage = ({ data }) => (
         ))}
       </ul>
     </article>
-
-    <article>
-      <h2 className="text-xl dark:text-secundario font-bold mt-6">
-        Categorías
-      </h2>
-      <ul className="flex flex-row flex-wrap items-center justify-evenly w-full">
-        {data.allStrapiCategory.edges.map(tag => (
-          <Link
-            key={tag.node.id}
-            to={`/categoria/${tag.node.slug}`}
-            className="text-gray-600 dark:text-gray-500 hover:text-gray-300 hover:bg-primario dark:hover:bg-gray-800 dark:hover:text-secundario group w-auto p-2 m-1 border-4 border-white hover:border-primario dark:hover:border-secundario rounded-lg flex flex-col justify-center items-center"
-          >
-            <li className="group-hover:border-primario rounded-lg flex flex-col justify-center items-center">
-              <h2>{tag.node.name}</h2>
-            </li>
-          </Link>
-        ))}
-      </ul>
-    </article>
   </>
 )
 
@@ -106,15 +87,6 @@ export const pageQuery = graphql`
               }
             }
           }
-        }
-      }
-    }
-    allStrapiCategory {
-      edges {
-        node {
-          slug
-          id
-          name
         }
       }
     }
