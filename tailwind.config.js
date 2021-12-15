@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
@@ -19,5 +19,5 @@ module.exports = {
       borderColor: ["responsive", "hover", "group-hover"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 }

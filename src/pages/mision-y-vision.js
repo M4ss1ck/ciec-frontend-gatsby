@@ -12,16 +12,16 @@ const MisionVision = () => {
           alt="Trabajadores del CIEC"
           className="w-100"
         />
-        <h1>Misión:</h1>
-        <h4>
+        <h1 className="titulo">Misión:</h1>
+        <p>
           Gestionar conocimientos científicos en el manejo y conservación de
           ecosistemas costeros para un desarrollo sostenible.
-        </h4>
-        <h1>Visión</h1>
-        <h4>
+        </p>
+        <h1 className="titulo">Visión</h1>
+        <p>
           Ser el centro de referencia regional en la gestión del conocimiento
           científico para el manejo y conservación de los ecosistemas costeros.
-        </h4>
+        </p>
       </article>
     </>
   )

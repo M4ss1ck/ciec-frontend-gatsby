@@ -13,7 +13,7 @@ const social = () => {
           imageUrl="../images/todos.jpg"
           type="organization"
         />
-        <h1>Objeto Social</h1>
+        <h1 className="titulo">Objeto Social</h1>
         <p>
           Ejecutar proyectos de investigaciones y ofrecer servicios
           científico-técnicos encaminados a la protección y el manejo sostenible

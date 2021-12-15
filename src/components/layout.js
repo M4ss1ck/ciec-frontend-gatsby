@@ -3,7 +3,8 @@ import React from "react"
 import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
-import banner from "../images/Banner.jpg"
+//import banner from "../images/Banner.jpg"
+import BaseTerrestre from "../images/Banner/BaseTerrestre.png"
 import ReadingProgress from "./readingProgress"
 import Subir from "./subir"
 
@@ -43,10 +44,10 @@ const Layout = ({ children }) => {
         className="flex flex-col items-center w-full p-0 m-0 bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-900 dark:to-black"
       >
         <img
-          src={banner}
+          src={BaseTerrestre}
           className="object-fill"
-          height={203}
-          width={940}
+          height={1088}
+          width={10629}
           alt="Banner"
         />
       </header>
@@ -55,7 +56,7 @@ const Layout = ({ children }) => {
       <ReadingProgress target={target} />
       <main
         lang="es"
-        className="container m-auto py-2 justify-content-between bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-800 dark:to-black text-gray-700 dark:bg-gray-900 dark:text-gray-400 text-center min-h-screen"
+        className="container m-auto py-2 justify-content-between bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-800 dark:to-black text-gray-700 dark:bg-gray-900 dark:text-gray-400 text-center min-h-screen md:min-h-min"
         ref={target}
       >
         {children}

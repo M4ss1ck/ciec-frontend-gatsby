@@ -3,11 +3,15 @@ import Seo from "../components/seo"
 
 const ConsultoriaAmbiental = () => {
   return (
-    <article>
+    <article className="columns-1 md:columns-2 lg:columns-3 text-justify">
       <Seo title="Consultoría Ambiental" />
       <hgroup>
-        <h2 id="titulo">Consultoría Ambiental</h2>
-        <h3>Servicios Científico-Técnicos</h3>
+        <h2 id="titulo" className="titulo">
+          Consultoría Ambiental
+        </h2>
+        <h3 className="font font-bold uppercase p-2">
+          Servicios Científico-Técnicos
+        </h3>
       </hgroup>
       <p>
         El Grupo de Gestión Ambiental y Servicios Científico–Técnicos presta
@@ -24,8 +28,10 @@ const ConsultoriaAmbiental = () => {
       </p>
 
       <hgroup>
-        <h2>Carpeta de servicios Científico Técnicos</h2>
-        <h3>Estudios de impacto ambiental</h3>
+        <h2 className="titulo">Carpeta de servicios Científico Técnicos</h2>
+        <h3 className="font-bold uppercase p-2">
+          Estudios de impacto ambiental
+        </h3>
       </hgroup>
       <p>
         El Estudio de Impacto Ambiental es el documento técnico en el cual se
@@ -37,7 +43,7 @@ const ConsultoriaAmbiental = () => {
         otros EIA similares ya realizados por la institución.
       </p>
 
-      <h3>Línea Base Ambiental</h3>
+      <h3 className="font-bold uppercase p-2">Línea Base Ambiental</h3>
       <p>
         Se entiende por línea de base, en los estudios de impacto ambiental, a
         la descripción de la situación actual, en la fecha del estudio, sin
@@ -55,7 +61,9 @@ const ConsultoriaAmbiental = () => {
         cero, alternativa cero, proyecto cero, o en otras palabras la opción de
         no hacer nada.
       </p>
-      <h3>Asesoramiento para la solicitud de licencia ambiental</h3>
+      <h3 className="font font-bold uppercase p-2">
+        Asesoramiento para la solicitud de licencia ambiental
+      </h3>
       <p>
         Es un proceso utilizado para la planeación y administración de
         proyectos, el cual asegura que las actividades humanas y económicas se
@@ -95,7 +103,7 @@ const ConsultoriaAmbiental = () => {
         mantenimiento, desmantelamiento, restauración final, abandono y/o
         terminación.
       </p>
-      <h3>Estudios Ambientales</h3>
+      <h3 className="font font-bold uppercase p-2">Estudios Ambientales</h3>
       <p>
         Están orientados a dar una consultoría ambiental eficiente, elaborando
         estudios ambientales que permitan una evaluación de calidad.
@@ -109,7 +117,7 @@ const ConsultoriaAmbiental = () => {
         <li>Solicitud de Licencia Ambiental </li>
       </ul>
 
-      <h3>Diagnósticos ambientales</h3>
+      <h3 className="font font-bold uppercase p-2">Diagnósticos ambientales</h3>
       <p>
         Los diagnósticos ambientales hacen referencia a la observación y
         análisis directo del territorio estudiado; es el trabajo de campo. La
@@ -119,7 +127,9 @@ const ConsultoriaAmbiental = () => {
         única.
       </p>
 
-      <h3>Diseño de Sistema de Gestión Ambiental</h3>
+      <h3 className="font font-bold uppercase p-2">
+        Diseño de Sistema de Gestión Ambiental
+      </h3>
       <p>
         Es un sistema estructurado de gestión que incluye la estructura
         organizativa, la planificación de las actividades, las
@@ -140,7 +150,9 @@ const ConsultoriaAmbiental = () => {
         significativos.
       </p>
 
-      <h3>Monitoreo ambiental e instalaciones</h3>
+      <h3 className="font font-bold uppercase p-2">
+        Monitoreo ambiental e instalaciones
+      </h3>
       <p>
         Los programas de Monitoreo y Calidad Ambiental buscan identificar y
         cuantificar los potenciales de contaminación del aire, aguas, suelos y
@@ -168,7 +180,9 @@ const ConsultoriaAmbiental = () => {
         <li>Monitoreo para cumplimiento de Limpieza de Sitios</li>
         <li>Monitoreo de Pre-, Durante y Post-construcción</li>
       </ul>
-      <h3>Servicios meteorológicos y resúmenes climáticos</h3>
+      <h3 className="font font-bold uppercase p-2">
+        Servicios meteorológicos y resúmenes climáticos
+      </h3>
       <p>
         A través de los Servicios Climáticos los datos e información climática
         básica se transforman en productos y aplicaciones climáticas específicas
@@ -315,7 +329,9 @@ const ConsultoriaAmbiental = () => {
         relacionados con el cuidado y la conservación del entorno.
       </p>
 
-      <h3>Proyectos de recuperación de playas</h3>
+      <h3 className="font font-bold uppercase p-2">
+        Proyectos de recuperación de playas
+      </h3>
       <p>
         Busca y logran mediante la gestión, planificación, proyección y
         desarrollo fundamentalmente:

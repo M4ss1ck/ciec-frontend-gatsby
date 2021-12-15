@@ -5,11 +5,11 @@ import Seo from "../components/seo"
 const grupos = () => {
   return (
     <>
-      <article className="container m-auto altura">
+      <article className="container m-auto altura columns-1 md:columns-2 lg:columns-3 py-4 text-justify">
         <Seo title="Grupos de Investigación" />
-        <h1>Grupos de Investigación</h1>
+        <h1 className="titulo">Grupos de Investigación</h1>
 
-        <h3>Ecología</h3>
+        <h3 className="titulo">Ecología</h3>
 
         <p>
           Realiza la caracterización, estado de salud, inventario, monitoreo y
@@ -24,7 +24,7 @@ const grupos = () => {
           costera (manglar, matorral y bosque) y lagunas costeras.
         </p>
 
-        <h3>Dinámica Costera</h3>
+        <h3 className="titulo">Dinámica Costera</h3>
         <p>
           Caracteriza el funcionamiento de los procesos litorales de las playas
           y su interrelación con los ecosistemas aledaños. Realiza el monitoreo
@@ -35,7 +35,7 @@ const grupos = () => {
           humana relacionado con los procesos erosivos litorales.
         </p>
 
-        <h3>Geocomponentes</h3>
+        <h3 className="titulo">Geocomponentes</h3>
         <p>
           Realiza la caracterización físico-geográfica y socioeconómica de zonas
           costeras. Caracteriza los paisajes marinos y terrestres. Elabora
@@ -45,7 +45,7 @@ const grupos = () => {
           economía ambiental.
         </p>
 
-        <h3>Análisis Físico-Químico</h3>
+        <h3 className="titulo">Análisis Físico-Químico</h3>
         <p>
           Realiza el monitoreo de parámetros físico-químicos de las aguas de la
           plataforma, macrolagunas interiores, lagunas litorales y cenotes.
@@ -56,7 +56,7 @@ const grupos = () => {
           fenómenos de corrosión.
         </p>
 
-        <h3>Hidrometeorología</h3>
+        <h3 className="titulo">Hidrometeorología</h3>
         <p>
           Realiza estudios especializados y el monitoreo permanente de las
           variables que definen el estado del tiempo. Caracteriza el régimen
@@ -66,7 +66,7 @@ const grupos = () => {
           energía eólica.
         </p>
 
-        <h3>Área de Investigación "Los Buchillones"</h3>
+        <h3 className="titulo">Área de Investigación "Los Buchillones"</h3>
         <p>
           Realiza investigaciones relacionadas con la arqueología, la
           paleogeografía y las ciencias sociales. Contribuye con la ejecución de
@@ -78,7 +78,9 @@ const grupos = () => {
           acción.
         </p>
 
-        <h3>Grupo de Gestión y Monitoreo de la Costa Sur de Cuba</h3>
+        <h3 className="titulo">
+          Grupo de Gestión y Monitoreo de la Costa Sur de Cuba
+        </h3>
         <p>
           Implementa planes de monitoreo de parámetros bióticos y abióticos,
           tanto terrestres como marinos, así como las actividades de proyectos

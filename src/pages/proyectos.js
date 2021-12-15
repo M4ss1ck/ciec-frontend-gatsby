@@ -9,7 +9,7 @@ const proyectos = () => {
       <article className="container m-auto altura">
         <Seo title="Proyectos" />
 
-        <h1 className="font-bold text-xl text-center">Proyectos Culminados:</h1>
+        <h1 className="titulo">Proyectos Culminados:</h1>
         <Tab.Group>
           <Tab.List>
             <Tab

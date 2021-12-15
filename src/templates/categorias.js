@@ -20,7 +20,7 @@ const CategoryTemplate = ({ data }) => (
               image={article.image.localFile.childImageSharp.gatsbyImageData}
               alt={article.title}
             />
-            <p>{article.description}</p>
+            <p className="line-clamp-4">{article.description}</p>
           </li>
         </Link>
       ))}

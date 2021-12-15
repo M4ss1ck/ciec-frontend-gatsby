@@ -9,7 +9,7 @@ const estructura = () => {
     <>
       <article className="container m-auto w-full text-center">
         <Seo title="Estructura" />
-        <h2 className="font-bold text-xl text-center">
+        <h2 className="titulo">
           Centro de Investigación de Ecosistemas Costeros
         </h2>
         <Tab.Group>
@@ -17,8 +17,8 @@ const estructura = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-blue-500 text-white px-4 py-2 -mb-px font-semibold rounded-t"
-                  : "bg-white text-primario px-4 py-2 -mb-px font-semibold rounded-t"
+                  ? "bg-secundario text-white px-4 py-2 -mb-px font-semibold rounded-t"
+                  : "bg-white text-secundario px-4 py-2 -mb-px font-semibold rounded-t"
               }
             >
               Estructura
@@ -26,8 +26,8 @@ const estructura = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-blue-500 text-white px-4 py-2 -mb-px font-semibold rounded-t"
-                  : "bg-white text-primario px-4 py-2 -mb-px font-semibold rounded-t"
+                  ? "bg-secundario text-white px-4 py-2 -mb-px font-semibold rounded-t"
+                  : "bg-white text-secundario px-4 py-2 -mb-px font-semibold rounded-t"
               }
             >
               Organigrama
@@ -35,8 +35,8 @@ const estructura = () => {
           </Tab.List>
           <Tab.Panels>
             <Tab.Panel className="flex flex-row justify-items-start">
-              <div className="flex flex-col w-full lg:w-1/2 m-0">
-                <strong>Ecología</strong>
+              <div className="columns-1 md:columns-2 lg:columns-3 py-4">
+                <h1 className="titulo">Ecología</h1>
                 <ul>
                   <li>Leslie Hernández Fernández</li>
                   <li>Raúl Gómez Fernández</li>
@@ -50,19 +50,19 @@ const estructura = () => {
                   <li>Claudia Bustamante López</li>
                   <li>Leila M. Leon Fraga</li>
                 </ul>
-                <strong>Geocomponentes</strong>
+                <h1 className="titulo">Geocomponentes</h1>
                 <ul>
                   <li>Tamara Figueredo Martín</li>
                   <li>Leander Brizuela Pardo</li>
                   <li>Yens M. Ferrero Rosales</li>
                   <li>Reisbel Báez Castañeda</li>
                 </ul>
-                <strong>Análisis Físico Químico</strong>
+                <h1 className="titulo">Análisis Físico Químico</h1>
                 <ul>
                   <li>Evelio A. Alemán Martín</li>
                   <li>Aleynis M. Barredo Year</li>
                 </ul>
-                <strong>Dinámica</strong>
+                <h1 className="titulo">Dinámica</h1>
                 <ul>
                   <li>Adán Zúñiga Ríos</li>
                   <li>Yandy Rodríguez Cueto</li>
@@ -71,7 +71,7 @@ const estructura = () => {
                   <li>Maria Elena Nuñez Sánchez</li>
                   <li>Aldo Díaz Nodarse</li>
                 </ul>
-                <strong>Hidrometeorología</strong>
+                <h1 className="titulo">Hidrometeorología</h1>
                 <ul>
                   <li>Felipe Matos Pupo</li>
                   <li>Luis M. Castellanos Suárez</li>
@@ -81,15 +81,17 @@ const estructura = () => {
                   <li>Mayleidis Reiné Guerra</li>
                   <li>Daynier Escalante Pérez</li>
                 </ul>
-                <strong>
+                <h1 className="titulo">
                   Grupo de Gestión y Monitoreo de la Costa Sur de Cuba
-                </strong>
+                </h1>
                 <ul>
                   <li>Carlos L. Falcón Cabrera</li>
                   <li>Emilio J. Fernández de la Vega</li>
                   <li>Yuniel Pupo Pérez</li>
                 </ul>
-                <strong>Área de Investigación "Los Buchillones"</strong>
+                <h1 className="titulo">
+                  Área de Investigación "Los Buchillones"
+                </h1>
                 <ul>
                   <li>Yanelis Buchillón López</li>
                   <li>Ihosvany Martínez Tamayo</li>
@@ -100,36 +102,35 @@ const estructura = () => {
                   <li>Dayessi Rojas Escobar</li>
                   <li>Ana Iris Lugones Martín</li>
                 </ul>
-              </div>
-              <div className="flex flex-col">
-                <strong>Dirección</strong>
+
+                <h1 className="titulo">Dirección</h1>
                 <ul>
                   <li>Fabian Pina Amargos</li>
                   <li>Roberto González de Zayas</li>
                 </ul>
-                <strong>Apoyo Dirección</strong>
+                <h1 className="titulo">Apoyo Dirección</h1>
                 <ul>
                   <li>Dilliam de la C. López Hernández</li>
                   <li>Heberto Morales Delgado</li>
                 </ul>
-                <strong>Servicios Científico-Técnicos</strong>
+                <h1 className="titulo">Servicios Científico-Técnicos</h1>
                 <ul>
                   <li>Yordano Barreda Pino</li>
                   <li>Omar J. Fernández Pérez</li>
                   <li>Gilberto Darias Hernandez</li>
                 </ul>
-                <strong>Economía</strong>
+                <h1 className="titulo">Economía</h1>
                 <ul>
                   <li>Angel M. Phillips Pena</li>
                   <li>Yiselis Palmero Alemán</li>
                   <li>Jorge Combet González</li>
                 </ul>
-                <strong>Recursos Humanos</strong>
+                <h1 className="titulo">Recursos Humanos</h1>
                 <ul>
                   <li>Arminda Villar Borroto</li>
                   <li>Eliany Gonzalez Prado</li>
                 </ul>
-                <strong>Servicios Generales</strong>
+                <h1 className="titulo">Servicios Generales</h1>
                 <ul>
                   <li>Eliana Gutierrez Torres</li>
                   <li>Vivian Dimas Montalvo</li>
@@ -142,7 +143,7 @@ const estructura = () => {
                   <li>Mileydis Arcia Crespo</li>
                   <li>Victor Manuel Portales Dimas</li>
                 </ul>
-                <strong>Seguridad y Protección</strong>
+                <h1 className="titulo">Seguridad y Protección</h1>
                 <ul>
                   <li>Arturo Sanchez Cuba</li>
                   <li>Juan C. Rodríguez Díaz</li>

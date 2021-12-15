@@ -23,6 +23,13 @@ body.dark {
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .titulo {
+    @apply font-extrabold uppercase p-2 text-lg text-center dark:text-secundario;
+  }
+}
+
+
 /* https://medium.com/swlh/explainlikeim5-1-dark-mode-on-css-react-and-gatsby-and-a-beautiful-toggle-40ccbcf01f8c */
 /* estilos de https://gist.github.com/xdebbie/ebd638fb277b33b7068fadc9218e25bc*/
 

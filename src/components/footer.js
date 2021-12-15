@@ -1,30 +1,27 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+//import { Link, useStaticQuery, graphql } from "gatsby"
 import { SocialIcon } from "react-social-icons"
 
 import citma from "../images/CITMA.png"
 
 const Footer = () => {
-  const data = useStaticQuery(graphql`
-    query FooterQuery {
-      allStrapiCategory {
-        edges {
-          node {
-            slug
-            id
-            name
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query FooterQuery {
+  //     allStrapiCategory {
+  //       edges {
+  //         node {
+  //           slug
+  //           id
+  //           name
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <footer className="w-full bg-gradient-to-l from-primario via-terciario to-primario text-white dark:from-black dark:via-gray-900 dark:to-black">
-      <div className="bg-primario dark:bg-black">
-        <ul className="flex flex-row flex-wrap items-center justify-evenly w-full">
-          {/* <h2 className="text-xl dark:text-secundario font-bold mt-6">
-            Categorías
-          </h2> */}
+      {/* <div className="bg-primario dark:bg-black">
+        <ul className="flex flex-row flex-wrap items-center justify-evenly w-full">          
           {data.allStrapiCategory.edges.map(tag => (
             <Link
               key={tag.node.id}
@@ -37,7 +34,7 @@ const Footer = () => {
             </Link>
           ))}
         </ul>
-      </div>
+      </div>  */}
       <div className="inline-flex flex-col md:flex-row w-full justify-center text-gray-200 dark:text-gray-400">
         <div className="flex-col w-full md:w-1/2">
           <div className="flex flex-col w-full p-4">

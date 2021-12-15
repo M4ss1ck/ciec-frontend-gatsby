@@ -7,19 +7,21 @@ const contacto = () => {
     <>
       <article className="container m-auto altura">
         <Seo title="Sobre Nosotros" />
-        <h2 className="h1">Centro de Investigación de Ecosistemas Costeros</h2>
+        <h1 className="font font-extrabold uppercase p-2">
+          Centro de Investigación de Ecosistemas Costeros
+        </h1>
 
         <StaticImage
           src="../images/todos.jpg"
           alt="Trabajadores del CIEC"
-          className="w-100"
+          className="object-fill py-4"
         />
 
-        <h4>
+        <p className="p-2 font-medium text-lg">
           El Centro de Investigaciones de Ecosistemas Costeros (CIEC) de Cayo
           Coco se adscribe a la Agencia de Medio Ambiente (AMA), perteneciente
           al Ministerio de Ciencia, Tecnología y Medio Ambiente (CITMA).
-        </h4>
+        </p>
       </article>
     </>
   )
