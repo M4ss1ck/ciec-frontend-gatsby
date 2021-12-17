@@ -48,7 +48,7 @@ const proyectos = () => {
           </Tab.List>
           <Tab.Panels>
             <Tab.Panel>
-              <ul className="lista-verde">
+              <ul className="lista-verde text-left py-4">
                 <li>
                   Lagunas costeras del Archipiélago Sabana- Camagüey, Cuba.
                   Estado actual. Perspectivas ante el cambio climático.

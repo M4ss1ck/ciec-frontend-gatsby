@@ -87,7 +87,7 @@ const Header = props => {
           </div>
         </div>
 
-        <ThemeToggler>
+        {/* <ThemeToggler>
           {({ theme, toggleTheme }) => (
             <>
               <label className="px-2">
@@ -130,9 +130,22 @@ const Header = props => {
                     toggleTheme(e.target.checked ? "dark" : "light")
                   }
                 />
-                {/* <span>No icons</span> */}
+                
               </label>
             </>
+          )}
+        </ThemeToggler> */}
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => (
+            <div className="dark-button mx-4">
+              <input
+                type="checkbox"
+                id="toggle"
+                onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+                checked={theme === "dark"}
+              />
+              <label for="toggle" htmlFor="toggle"></label>
+            </div>
           )}
         </ThemeToggler>
       </nav>
