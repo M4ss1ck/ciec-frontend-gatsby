@@ -1,8 +1,11 @@
 import React from "react"
 //import { Link, useStaticQuery, graphql } from "gatsby"
 import { SocialIcon } from "react-social-icons"
+import { StaticImage } from "gatsby-plugin-image"
 
 import citma from "../images/CITMA.png"
+import ciec from "../images/logo_CIEC_footer.png"
+import ama from "../images/AMA.png"
 
 const Footer = () => {
   // const data = useStaticQuery(graphql`
@@ -82,10 +85,28 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex-col justify-center w-full md:w-1/5">
-          <div className="flex h-full items-center justify-center p-4">
-            <img src={citma} alt="logotipo del CITMA" />
-          </div>
+        <div className="flex flex-row flex-nowrap justify-evenly items-center px-2 w-full md:w-1/5">
+          <StaticImage
+            src="../images/logo_CIEC_footer.png"
+            alt="logotipo del CIEC"
+            width={32}
+            height={32}
+            className="py-4 px-4"
+          />{" "}
+          <StaticImage
+            src="../images/AMA.png"
+            alt="logotipo de la AMA"
+            width={32}
+            height={32}
+            className="py-4 px-4"
+          />{" "}
+          <StaticImage
+            src="../images/CITMA.png"
+            alt="logotipo del CITMA"
+            width={32}
+            height={32}
+            className="py-4 px-4"
+          />
         </div>
       </div>
       {/* <hr /> */}
