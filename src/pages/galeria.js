@@ -1,4 +1,5 @@
 import React from "react"
+import Seo from "../components/seo"
 import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import SlideShow from "../components/SlideShow/SlideShow"
@@ -32,7 +33,8 @@ function Galeria2() {
 
   return (
     <>
-      <div className="divide-y divide-blue w-100">
+      <article className="divide-y divide-blue w-100">
+        <Seo title="Galería" />
         <div className="w-full h-2/3 flex items-center justify-center">
           <div
             className="flex justify-center align-middle items-center my-auto z-0 w-max overflow-hidden rounded-xl "
@@ -100,7 +102,7 @@ function Galeria2() {
             </SlideShow>
           </div>
         </div>
-      </div>
+      </article>
     </>
   )
 }

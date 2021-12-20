@@ -3,9 +3,9 @@ import React from "react"
 import { SocialIcon } from "react-social-icons"
 import { StaticImage } from "gatsby-plugin-image"
 
-import citma from "../images/CITMA.png"
-import ciec from "../images/logo_CIEC_footer.png"
-import ama from "../images/AMA.png"
+// import citma from "../images/CITMA.png"
+// import ciec from "../images/logo_CIEC_footer.png"
+// import ama from "../images/AMA.png"
 
 const Footer = () => {
   // const data = useStaticQuery(graphql`
@@ -85,27 +85,27 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="flex flex-row flex-nowrap justify-evenly items-center px-2 w-full md:w-1/5">
+        <div className="flex flex-row flex-nowrap justify-evenly items-center p-2 w-full md:w-1/5">
           <StaticImage
             src="../images/logo_CIEC_footer.png"
             alt="logotipo del CIEC"
-            width={32}
-            height={32}
-            className="py-4 px-4"
+            width={45}
+            height={45}
+            className=""
           />{" "}
           <StaticImage
             src="../images/AMA.png"
             alt="logotipo de la AMA"
-            width={32}
-            height={32}
-            className="py-4 px-4"
+            width={45}
+            height={45}
+            className=""
           />{" "}
           <StaticImage
             src="../images/CITMA.png"
             alt="logotipo del CITMA"
-            width={32}
-            height={32}
-            className="py-4 px-4"
+            width={45}
+            height={45}
+            className=""
           />
         </div>
       </div>

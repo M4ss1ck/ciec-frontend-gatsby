@@ -7,7 +7,7 @@ const social = () => {
       <article className="container m-auto altura">
         <Seo
           pageTitle="Objeto Social"
-          title="CIEC"
+          title="Objeto Social"
           description="Centro de Investigaciones de Ecosistemas Costeros"
           url="/social"
           imageUrl="../images/todos.jpg"

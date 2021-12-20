@@ -5,10 +5,8 @@ import Seo from "../components/seo"
 const proyectos = () => {
   return (
     <>
-      <Seo title="Proyectos" />
       <article className="container m-auto altura">
         <Seo title="Proyectos" />
-
         <h1 className="titulo">Proyectos Culminados:</h1>
         <Tab.Group>
           <Tab.List>

@@ -29,7 +29,17 @@ body.dark {
   }
 }
 
+.mipatron {
+  background-image: url(../images/texture.png);
+  background-repeat: repeat;
+  background-size: 100px;
+}
 
+.dark .mipatron{
+  background-image: url(../images/blacktexture.png);
+  background-repeat: repeat;
+  background-size: 100px;
+}
 
 
 /* https://medium.com/swlh/explainlikeim5-1-dark-mode-on-css-react-and-gatsby-and-a-beautiful-toggle-40ccbcf01f8c */

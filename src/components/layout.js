@@ -4,7 +4,7 @@ import Footer from "./footer"
 import Header from "./header"
 import "./layout.css"
 //import banner from "../images/Banner.jpg"
-import BaseTerrestre from "../images/Banner/BaseTerrestre.png"
+import BaseTerrestre from "../images/Banner/Base.png"
 import ReadingProgress from "./readingProgress"
 import Subir from "./subir"
 
@@ -56,7 +56,7 @@ const Layout = ({ children }) => {
       <ReadingProgress target={target} />
       <main
         lang="es"
-        className="container m-auto py-2 justify-content-between bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-800 dark:to-black text-gray-700 dark:bg-gray-900 dark:text-gray-400 text-center min-h-screen md:min-h-min"
+        className="container m-auto py-2 justify-content-between bg-gradient-to-r from-primario via-terciario to-primario dark:from-black dark:via-gray-800 dark:to-black text-gray-700 dark:bg-gray-900 dark:text-gray-400 text-center min-h-screen md:min-h-min mipatron"
         ref={target}
       >
         {children}
