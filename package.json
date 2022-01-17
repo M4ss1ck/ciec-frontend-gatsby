@@ -8,7 +8,6 @@
     "@babel/core": "^7.12.3",
     "@headlessui/react": "^1.4.2",
     "@tailwindcss/line-clamp": "^0.3.0",
-    "@tailwindcss/typography": "^0.4.1",
     "gatsby": "^4.0.2",
     "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-google-analytics": "^4.0.0",
@@ -34,6 +33,7 @@
     "rehype-raw": "^6.1.0"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
     "autoprefixer": "^10.4.0",
     "gatsby-plugin-postcss": "^5.2.0",
     "postcss": "^8.4.4",

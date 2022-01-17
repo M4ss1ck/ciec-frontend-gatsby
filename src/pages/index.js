@@ -7,16 +7,18 @@ import Seo from "../components/seo"
 const IndexPage = ({ data }) => (
   <>
     <Seo title="Página Principal" />
-    <article className="container m-auto justify-content-between float text-justify ">
+    <article className="container m-auto justify-content-between text-justify prose lg:prose-xl dark:prose-dark mx-auto">
       <h2 className="titulo">
-        Bienvenidos al Centro de Investigaciones de Ecosistemas Costeros
+        Centro de Investigaciones de Ecosistemas Costeros
       </h2>
-      <div className="columns-1 md:columns-2 lg:columns-3">
-        <StaticImage
-          src="../images/location.png"
-          alt=""
-          className="img-inline"
-        />
+      <div className="">
+        <div className="w-full text-center">
+          <StaticImage
+            src="../images/location.png"
+            alt=""
+            className="inline-block object-fill mx-auto"
+          />
+        </div>
         <p>
           El Centro de Investigaciones de Ecosistemas Costeros se encuentra
           ubicado en Cayo Coco, en la parte central del Archipiélago

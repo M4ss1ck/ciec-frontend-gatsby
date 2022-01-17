@@ -4,7 +4,7 @@ specifiers:
   '@babel/core': ^7.12.3
   '@headlessui/react': ^1.4.2
   '@tailwindcss/line-clamp': ^0.3.0
-  '@tailwindcss/typography': ^0.4.1
+  '@tailwindcss/typography': ^0.5.0
   autoprefixer: ^10.4.0
   gatsby: ^4.0.2
   gatsby-plugin-dark-mode: ^1.1.2
@@ -38,7 +38,6 @@ dependencies:
   '@babel/core': 7.16.0
   '@headlessui/react': 1.4.2_react-dom@17.0.2+react@17.0.2
   '@tailwindcss/line-clamp': 0.3.0_tailwindcss@3.0.5
-  '@tailwindcss/typography': 0.4.1_tailwindcss@3.0.5
   gatsby: 4.2.0_react-dom@17.0.2+react@17.0.2
   gatsby-plugin-dark-mode: 1.1.2_react@17.0.2
   gatsby-plugin-google-analytics: 4.2.0_c765a534a9819edd276fc963d09a6af1
@@ -64,6 +63,7 @@ dependencies:
   rehype-raw: 6.1.0
 
 devDependencies:
+  '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.5
   autoprefixer: 10.4.0_postcss@8.4.4
   gatsby-plugin-postcss: 5.2.0_gatsby@4.2.0+postcss@8.4.4
   postcss: 8.4.4
@@ -2275,17 +2275,17 @@ packages:
       tailwindcss: 3.0.5_6b4e3d148bdcb715d5f821ed0a9c268b
     dev: false
 
-  /@tailwindcss/typography/0.4.1_tailwindcss@3.0.5:
-    resolution: {integrity: sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==}
+  /@tailwindcss/typography/0.5.0_tailwindcss@3.0.5:
+    resolution: {integrity: sha512-1p/3C6C+JJziS/ghtG8ACYalbA2SyLJY27Pm33cVTlAoY6VQ7zfm2H64cPxUMBkVIlWXTtWHhZcZJPobMRmQAA==}
     peerDependencies:
-      tailwindcss: '>=2.0.0'
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || insiders'
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       tailwindcss: 3.0.5_6b4e3d148bdcb715d5f821ed0a9c268b
-    dev: false
+    dev: true
 
   /@tokenizer/token/0.3.0:
     resolution: {integrity: sha512-OvjF+z51L3ov0OyAU0duzsYuvO01PH7x4t6DJx+guahgTnBHkhJdG7soQeTSFLWN3efnHyibZ4Z8l2EuWwJN3A==}
@@ -8040,7 +8040,7 @@ packages:
 
   /lodash.castarray/4.4.0:
     resolution: {integrity: sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=}
-    dev: false
+    dev: true
 
   /lodash.clonedeep/4.5.0:
     resolution: {integrity: sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=}
@@ -8076,7 +8076,6 @@ packages:
 
   /lodash.isplainobject/4.0.6:
     resolution: {integrity: sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=}
-    dev: false
 
   /lodash.isstring/4.0.1:
     resolution: {integrity: sha1-1SfftUVuynzJu5XV2ur4i6VKVFE=}
@@ -8096,7 +8095,6 @@ packages:
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
-    dev: false
 
   /lodash.template/4.5.0:
     resolution: {integrity: sha512-84vYFxIkmidUiFxidA/KjjH9pAycqW+h980j7Fuz5qxRtO9pgB7MDFTdys1N7A5mcucRiDyEq4fusljItR1T/A==}
@@ -8117,7 +8115,6 @@ packages:
 
   /lodash.uniq/4.5.0:
     resolution: {integrity: sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=}
-    dev: false
 
   /lodash.without/4.4.0:
     resolution: {integrity: sha1-PNRXSgC2e643OpS3SHcmQFB7eqw=}

@@ -8,7 +8,10 @@ const ArticleTemplate = ({ data }) => (
   <>
     <h1>{data.strapiArticle.title}</h1>
     <p>
-      <Link to={`/autores/Writer_${data.strapiArticle.author.id}`}>
+      <Link
+        to={`/autores/Writer_${data.strapiArticle.author.id}`}
+        className="font-light text-gray-600 dark:text-secundario"
+      >
         {data.strapiArticle.author.name}
       </Link>
     </p>
@@ -19,7 +22,7 @@ const ArticleTemplate = ({ data }) => (
       className="w-2/3 rounded-lg"
     />
 
-    <div>
+    <div className="text-justify prose lg:prose-xl dark:prose-dark mx-auto">
       <hr />
       <ReactMarkdown
         rehypePlugins={[rehypeRaw]}
