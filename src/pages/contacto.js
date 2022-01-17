@@ -8,7 +8,7 @@ const contacto = () => {
       <article className="container m-auto prose lg:prose-2xl dark:prose-dark mx-auto">
         <Seo title="Sobre Nosotros" />
         <h1 className="titulo">
-          Centro de Investigación de Ecosistemas Costeros
+          Centro de Investigaciones de Ecosistemas Costeros
         </h1>
 
         <StaticImage
