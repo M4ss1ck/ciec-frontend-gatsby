@@ -7,7 +7,7 @@ const historia = () => {
       <article className="container m-auto altura ">
         <Seo title="Historia del CIEC" />
         <h1 className="titulo">Historia del CIEC</h1>
-        <div className="text-justify columns-1 md:columns-2 lg:columns-3 p-4">
+        <div className="text-justify prose lg:prose-2xl dark:prose-dark mx-auto p-4">
           <p>
             En la década de los 80 se implementa en el país un amplio programa
             de desarrollo turístico, siendo parte de ese programa la cayería

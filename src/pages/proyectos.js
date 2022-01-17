@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 const proyectos = () => {
   return (
     <>
-      <article className="container m-auto altura">
+      <article className="container m-auto prose lg:prose-2xl dark:prose-dark">
         <Seo title="Proyectos" />
         <h1 className="titulo">Proyectos Culminados:</h1>
         <Tab.Group>
@@ -13,7 +13,7 @@ const proyectos = () => {
             <Tab
               className={({ selected }) =>
                 selected
-                  ? "bg-gray-500 text-white px-4 py-2 -mb-px font-semibold rounded-t"
+                  ? "bg-secundario text-white px-4 py-2 -mb-px font-semibold rounded-t-lg border-b-4 border-b-secundario"
                   : "bg-black text-gray-700 px-4 py-2 -mb-px font-semibold rounded-t"
               }
             >
@@ -21,25 +21,25 @@ const proyectos = () => {
             </Tab>
             <Tab
               disabled
-              className="text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t"
+              className="text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t-lg border-b-4 border-b-secundario"
             >
               2018
             </Tab>
             <Tab
               disabled
-              className=" text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t"
+              className=" text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t-lg border-b-4 border-b-secundario"
             >
               2019
             </Tab>
             <Tab
               disabled
-              className="text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t"
+              className="text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t-lg border-b-4 border-b-secundario"
             >
               2020
             </Tab>
             <Tab
               disabled
-              className="text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t"
+              className="text-gray-400 px-4 py-2 -mb-px font-semibold rounded-t-lg border-b-4 border-b-secundario"
             >
               2021
             </Tab>

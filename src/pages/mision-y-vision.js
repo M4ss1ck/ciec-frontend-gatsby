@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 const MisionVision = () => {
   return (
     <>
-      <article className="container m-auto altura">
+      <article className="container m-auto prose lg:prose-2xl dark:prose-dark">
         <Seo title="Misión y Visión" />
         <StaticImage
           src="../images/todos.jpg"

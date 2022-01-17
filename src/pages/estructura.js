@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 const estructura = () => {
   return (
     <>
-      <article className="container m-auto w-full text-center">
+      <article className="container m-auto w-full text-center prose dark:prose-dark mx-auto">
         <Seo title="Estructura" />
         <h2 className="titulo">
           Centro de Investigación de Ecosistemas Costeros
@@ -35,7 +35,7 @@ const estructura = () => {
           </Tab.List>
           <Tab.Panels>
             <Tab.Panel className="flex flex-row justify-items-start">
-              <div className="columns-1 md:columns-2 lg:columns-3 py-4">
+              <div className="columns-1 md:columns-2 py-4">
                 <h1 className="titulo">Ecología</h1>
                 <ul>
                   <li>Leslie Hernández Fernández</li>

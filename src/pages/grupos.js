@@ -5,7 +5,7 @@ import Seo from "../components/seo"
 const grupos = () => {
   return (
     <>
-      <article className="container m-auto altura columns-1 md:columns-2 lg:columns-3 py-4 text-justify">
+      <article className="container m-auto altura py-4 text-justify prose lg:prose-2xl dark:prose-dark mx-auto">
         <Seo title="Grupos de Investigación" />
         <h1 className="titulo">Grupos de Investigación</h1>
 

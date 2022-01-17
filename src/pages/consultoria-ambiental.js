@@ -3,7 +3,7 @@ import Seo from "../components/seo"
 
 const ConsultoriaAmbiental = () => {
   return (
-    <article className="columns-1 md:columns-2 lg:columns-3 text-justify">
+    <article className="text-justify prose lg:prose-2xl dark:prose-dark mx-auto">
       <Seo title="Consultoría Ambiental" />
       <hgroup>
         <h2 id="titulo" className="titulo">

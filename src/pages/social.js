@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 const social = () => {
   return (
     <>
-      <article className="container m-auto altura">
+      <article className="container m-auto prose lg:prose-2xl dark:prose-dark">
         <Seo
           pageTitle="Objeto Social"
           title="Objeto Social"
@@ -14,7 +14,7 @@ const social = () => {
           type="organization"
         />
         <h1 className="titulo">Objeto Social</h1>
-        <p>
+        <p className="text-justify">
           Ejecutar proyectos de investigaciones y ofrecer servicios
           científico-técnicos encaminados a la protección y el manejo sostenible
           de zonas costeras naturales, afectadas por el desarrollo económico,

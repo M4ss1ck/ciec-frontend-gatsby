@@ -5,9 +5,9 @@ import Seo from "../components/seo"
 const contacto = () => {
   return (
     <>
-      <article className="container m-auto altura">
+      <article className="container m-auto prose lg:prose-2xl dark:prose-dark mx-auto">
         <Seo title="Sobre Nosotros" />
-        <h1 className="font font-extrabold uppercase p-2">
+        <h1 className="titulo">
           Centro de Investigación de Ecosistemas Costeros
         </h1>
 

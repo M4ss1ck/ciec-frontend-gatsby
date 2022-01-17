@@ -91,21 +91,21 @@ const Footer = () => {
             alt="logotipo del CIEC"
             width={45}
             height={45}
-            className=""
+            className="object-center"
           />{" "}
           <StaticImage
             src="../images/AMA.png"
             alt="logotipo de la AMA"
             width={45}
             height={45}
-            className=""
+            className="object-center"
           />{" "}
           <StaticImage
             src="../images/CITMA.png"
             alt="logotipo del CITMA"
             width={45}
             height={45}
-            className=""
+            className="object-center"
           />
         </div>
       </div>
